@@ -1,0 +1,4 @@
+# Must use the version to be installed
+fastapi
+uvicorn
+jinja2
