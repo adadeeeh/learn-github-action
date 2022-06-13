@@ -22,5 +22,5 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/fastapi-cicd:latest
-          cache-from: type=registry,ref=${{ secrets.DOCKERHUB_USERNAME }}/astapi-cicd:buildcache
-          cache-to: type=registry,ref=${{ secrets.DOCKERHUB_USERNAME }}/astapi-cicd:buildcache,mode=max
+          cache-from: type=registry,ref=${{ secrets.DOCKERHUB_USERNAME }}/fastapi-cicd:buildcache
+          cache-to: type=registry,ref=${{ secrets.DOCKERHUB_USERNAME }}/fastapi-cicd:buildcache,mode=max
