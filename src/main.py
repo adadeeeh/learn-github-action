@@ -16,6 +16,9 @@ def home(request: Request):
 def hello():
     return {"Hello": "World"}
 
+@app.get("/status")
+def hi():
+    return {"status": "good"}
 
 if __name__ == "__main__":
     uvicorn.run("main:app")
