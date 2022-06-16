@@ -4,6 +4,8 @@
 
 This repository is used to learn GitHub Actions. This repository app uses FastAPI which is a Python web framework and then dockerize it and push it to Docker Registry. [This](.github/workflows/python-app.yml) GitHub Action is used as CI to build and test FastAPI app. [This](.github/workflows/push-docker-dev.yml) GitHub Action is used as CI to build docker image in dev branch for non-production environment and push it to Docker Registry after pull request is merged to dev branch. [This](.github/workflows/push-docker-main.yml) GitHub Action is used as CI to build docker image in main branch for production environment and push it to Docker Registry after publish a release.
 
+The CD flow uses Argo CD from [this](https://github.com/adadeeeh/eks/tree/main/argocd) repository
+
 ## Flow Development
 
 ![Flow Development Example](flow.png)
